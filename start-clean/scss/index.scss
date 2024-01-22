@@ -1,0 +1,319 @@
+@import "../scss/components/_common";
+
+@import "../scss/components/_reset";
+
+@import "../scss/components/_mixins";
+
+html{
+    margin: 50px 162px ;
+    header {
+
+        @include bage;
+    .row g-1{
+        col{
+            margin-bottom:20px;
+        };
+         a{
+            text-decoration: none;
+        };
+    }
+    };
+};
+body{
+    background: var(--Grey-10, #1A1A1A) !important;
+}
+
+header {
+    ul{
+        align-items: center;
+        height: 50px;
+        @include text;
+        gap: 25px;
+        line-height: 150%;
+        display: flex;
+        margin-bottom: 0;
+      };
+    
+}
+
+header {
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .btn__login{
+        gap: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+ };
+    .btn__login a{
+      @include dark
+    }
+    .Login {    
+        display: flex;
+        padding: 14px 30px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 82px;
+        background: var(--Green-60, #CAFF33);
+        
+    }
+}
+.btn__login span{
+    @include white;
+}
+
+.Log__Slide{
+    margin: 53px 20px;
+    display: flex;
+    @include main__bg;
+}
+.row{
+    gap: 80px;
+    width: 100%;
+}
+
+.Lgmain{
+    h1{
+        @include Green;
+    }
+    h5{
+        @include lite;
+    }
+}
+.User{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.User__Memmory{
+    gap: 30px;
+    display: flex;
+    .Email, .Password{
+        @include border;
+        @include Grey
+    }
+}
+
+.Forgot{
+    display: flex;
+    justify-content: center;
+    @include white;
+    a{
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+.Panel {
+    padding: 0 240px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    #Login{
+       @include Btnlog;
+    }
+    #Sing{
+        @include Sing;
+    }
+}
+
+.Line{
+    display: flex;
+    height: 1px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img{
+        margin-bottom: 15px;
+    }
+
+    p{
+    @include line
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    a{
+        @include btnsframe;
+    }
+    img{
+        @include btns;
+    }
+}
+.cont_block{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.cont__nt{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+    height: 140px
+}
+
+.textct1{
+    h1{
+        span{
+            @include Gren4;
+            }
+         @include Btn4;
+         }
+     h5{
+         @include Grey;
+     }
+}
+
+.textct{
+    margin-top: 60px;
+    width: 386px;
+    height: 83px;
+    @include framegrey;
+    ul{
+        padding: 1px 14px;
+        align-items: center;
+        gap: 24px;
+        display: flex;
+    }
+    span{
+        @include dark;
+    }
+    li{
+        gap: 24px;
+        @include text;
+        span{
+            @include btn3;
+        }
+    }
+}
+
+.cont__slideer{
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    .cont_block{
+        width: 404px;
+    }
+    .slidder{
+        display: flex;
+    }
+    .text{
+        @include white;
+    }
+    .Name{
+        @include name;
+    }
+}
+
+footer{
+    @include footer;
+    hr{
+        background: #262626;
+        width: 1596px;
+        height: 1px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    ul{
+        display: flex;
+        gap: 26px;
+    }
+    li{
+        gap: 6px;
+        @include White__ft;
+
+    }
+    .cont{
+        li{
+            @include White__ft;
+            gap: 6px;
+            display: flex;
+        }
+    }
+}
+
+.foot_btm{
+
+    @include Foot_btn;
+    .icon1{
+        .icon2{
+            display: flex;
+            gap: 14px;
+            a{
+                @include Icon123;
+            }
+        }
+    }
+    .YourBank {
+        @include Grey;
+    }
+    .PolPr{
+        @include Grey;
+        gap: 12px;
+    }
+
+}
+
+.User__Memmory1 {
+    gap: 30px;
+    display: flex;
+    .First, .Second{
+        @include border;
+        @include Grey
+    }
+}
+.User__Memmory2{
+    gap: 30px;
+    display: flex;
+    .Email, .Password{
+        @include border;
+        @include Grey
+    }
+}
+
+main
+    .main__sc{
+    @include Cont__Sec;
+    .main__sc, .text1{
+        
+        z-index: 5;
+        .main__sc, .text1,.top_text{
+            @include Cont_Sec;
+             h1{
+                @include WhiteSC;
+                span{
+                    @include GreenSC;
+                }
+             }
+             h5{
+                @include GreySC;
+             }
+        }
+    }
+    .img{
+        border-radius: 16px;
+        background: lightgray 50% / cover no-repeat, url(<path-to-image>), lightgray 50% / cover no-repeat;
+        background-blend-mode: overlay, normal;
+    }
+    .svg{
+        z-index: 1;
+        right: 0;
+        position: absolute;
+        fill: radial-gradient(152.24% 143.75% at 103.26% 0%, rgba(25, 25, 25, 0.30) 20.29%, rgba(202, 255, 51, 0.30) 34.91%, rgba(25, 25, 25, 0.30) 60.69%);
+    }
+}
